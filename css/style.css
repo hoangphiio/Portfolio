@@ -348,7 +348,7 @@ table {
   transform: rotate(90deg);
   margin-left: 5px;
 }
-.header-phone span {
+.header-phone a {
   color: #fec544;
   margin-left: 25px;
 }
