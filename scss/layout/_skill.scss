@@ -1,0 +1,85 @@
+.skill {
+    &-center {
+        &-box{
+            margin-bottom: 60px;
+        }
+        &-skill {
+            @include flex;
+            align-items: center;
+            line-height: 1.5;
+            @include max(800px){
+                flex-direction: column;
+            }
+        }
+        &-text {
+            flex: 0 0 50%;
+            margin-right: 15px;
+            @include max(800px){
+                margin-right: 0;
+                padding: 0 30px;
+            }
+            & h2{
+                @include max(500px){
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+        &-main {
+            flex: 0 0 45%;
+            margin-left: 15px;
+            @include max(800px){
+                margin-left: 0;
+                width: 90%;
+                margin-top: 30px;
+            }
+            &-text{
+                @include flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 700;
+            }
+            &-bar{
+                width: 100%;
+                height: 2px;
+                margin-bottom: 20px;
+                background-color: $color-four;
+                & .border-html{
+                    width: 90%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-css{
+                    width: 80%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-js{
+                    width: 70%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-sass{
+                    width: 70%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-bt{
+                    width: 80%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-react{
+                    width: 40%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+                & .border-php{
+                    width: 50%;
+                    height: 2px;
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}

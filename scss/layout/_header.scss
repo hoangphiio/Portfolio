@@ -1,0 +1,60 @@
+.header {
+    &-wrap {
+        @include flex;
+    }
+    &-top {
+        width: 100%;
+        &-box {
+            @include flex;
+            align-items: center;
+            justify-content: space-between;
+            @include max(1200px) {
+                justify-content: center;
+            }
+            @include max(1000px){
+                align-items: unset;
+                justify-content: unset;
+            }
+        }
+    }
+    &-list {
+        width: 100%;
+        &-inner {
+            @include flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            & li {
+                @include max(1200px) {
+                    padding: 0 10px;
+                }
+                padding: 0 25px;
+            }
+            & a:hover {
+                color: $color-primary;
+                transition: 0.3s;
+            }
+        }
+    }
+    &-phone {
+        position: relative;
+        @include flex;
+        align-items: center;
+        & i {
+            transform: rotate(90deg);
+            margin-left: 5px;
+        }
+        & span {
+            color: $color-primary;
+            margin-left: 25px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 12px;
+            left: 0;
+            background: $color-second;
+        }
+    }
+}

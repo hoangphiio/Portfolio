@@ -1,0 +1,6 @@
+.footer{
+    &-bottom{
+        @include mid-flex;
+        color: $color-four;
+    }
+}

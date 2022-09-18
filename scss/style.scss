@@ -1,0 +1,25 @@
+@import url("../js/library/aos/aos.css");
+@import url("../js/library/fontawesome/css/all.css");
+@import url("../js/library/fontawesome/css/fontawesome.min.css");
+@import url("../js/library/hover/hover.css");
+@import url("../js/library/particles/particles.css");
+// @import url("../js/library/wow/animate.min.css");
+
+// Core
+@import "./core/base";
+@import "./core/reset";
+@import "./core/variable";
+@import "./core/mixin";
+
+// layout
+@import "./layout/header";
+@import "./layout/name";
+@import "./layout/aboutme";
+@import "./layout/skill";
+@import "./layout/resume";
+@import "./layout/portfolio";
+@import "./layout/contact";
+@import "./layout/footer";
+// Component
+@import "./component/scroll";
+@import "./component/navigation";
