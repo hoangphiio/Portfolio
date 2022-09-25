@@ -147,7 +147,7 @@ img {
 
 .typing-demo {
   width: 100%;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 1s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -160,7 +160,7 @@ img {
   }
 }
 @keyframes blink {
-  50% {
+  30% {
     border-color: transparent;
   }
 }
@@ -1136,7 +1136,6 @@ table {
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
 }
 
 #button::after {
@@ -1165,7 +1164,7 @@ table {
 
 /*Styling Hamburger Icon*/
 .hamburger div {
-  width: 30px;
+  width: 20px;
   height: 3px;
   background: #f2f5f7;
   margin: 5px;
