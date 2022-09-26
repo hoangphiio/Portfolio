@@ -38,6 +38,10 @@ img {
   object-fit: cover;
 }
 
+#page-01 {
+  margin-bottom: 50px;
+}
+
 .main {
   overflow: hidden;
 }
@@ -133,6 +137,15 @@ img {
   #height-second {
     height: 50px;
   }
+}
+
+#height-third {
+  margin: 12px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.fa-phone {
+  transform: rotate(90deg);
 }
 
 .text {
@@ -428,6 +441,11 @@ table {
   .name-bottom {
     display: unset;
     justify-content: unset;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .name-bottom {
+    padding: 0 15px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1123,6 +1141,162 @@ table {
   color: #a9adb8;
 }
 
+.cv-name-position {
+  margin: 60px 0;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .cv-name-position {
+    display: none;
+  }
+}
+.cv-name-position-heading {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+}
+.cv-name-box {
+  background-size: cover;
+  background-repeat: repeat;
+  background-image: url(/assets/images/bg.png);
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .cv-name-box {
+    display: none;
+  }
+}
+.cv-name-box-info {
+  margin-bottom: 30px;
+}
+.cv-name-box-name {
+  text-align: center;
+}
+.cv-name-box-name h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.cv-name-box-contact {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.cv-name-box-contact p {
+  margin: 0 8px;
+}
+.cv-name-box-details {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.cv-name-box-title {
+  border-bottom: 1px solid #000;
+}
+.cv-name-box-title h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cv-name-box-text {
+  padding: 4px 0;
+}
+.cv-name-box-skills li span:first-child {
+  width: 300px;
+  display: inline-block;
+}
+.cv-name-box-footer {
+  text-align: right;
+  margin-top: 100px;
+  color: #a9adb8;
+}
+.cv-name-mobile {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .cv-name-mobile {
+    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 100vh;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cv-name-mobile {
+    font-size: 18px;
+  }
+}
+.cv-name-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  font-size: 30px;
+  height: 100vh;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .cv-name-inner {
+    font-size: 18px;
+  }
+}
+.cv-name-back {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px;
+}
+.cv-name-back a {
+  margin-left: 12px;
+}
+
+.item-text {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-text-school {
+  font-weight: 700;
+}
+.item-text-italic {
+  font-style: italic;
+}
+
 #button {
   display: inline-block;
   background-color: #ff9800;
@@ -1269,6 +1443,29 @@ table {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+th {
+  width: 20%;
+  font-weight: 700;
+}
+
+td[scope=col] {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

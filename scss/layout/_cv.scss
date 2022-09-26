@@ -1,0 +1,113 @@
+.cv {
+    &-name {
+        &-position {
+            margin: 60px 0;
+            font-weight: 700;
+            @include max(1200px) {
+                display: none;
+            }
+            &-heading {
+                text-align: center;
+                width: 100%;
+                font-size: 30px;
+            }
+        }
+        &-box {
+            background-size: cover;
+            background-repeat: repeat;
+            background-image: url(/assets/images/bg.png);
+            background-color: $color-second;
+            color: #000;
+            padding: 30px;
+            @include max(1200px) {
+                display: none;
+            }
+            &-info {
+                margin-bottom: 30px;
+            }
+            &-name {
+                text-align: center;
+                & h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+            &-contact {
+                @include mid-flex();
+                & p {
+                    margin: 0 8px;
+                }
+            }
+            &-details {
+                @include flex();
+                align-items: center;
+            }
+            &-title {
+                border-bottom: 1px solid #000;
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+            &-text {
+                padding: 4px 0;
+            }
+            &-skills {
+                & li span:first-child {
+                    width: 300px;
+                    display: inline-block;
+                }
+            }
+            &-footer {
+                text-align: right;
+                margin-top: 100px;
+                color: $color-four;
+            }
+        }
+        &-mobile {
+            display: none;
+            @include max(1200px) {
+                display: block;
+                @include mid-flex;
+                height: 100vh;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            @include max(600px) {
+                font-size: 18px;
+            }
+        }
+        &-inner {
+            @include mid-flex();
+            font-size: 30px;
+            height: 100vh;
+            font-weight: 700;
+            @include max(600px) {
+                font-size: 18px;
+            }
+        }
+        &-back {
+            @include flex();
+            align-items: center;
+            justify-content: flex-end;
+            padding: 12px;
+            & a {
+                margin-left: 12px;
+            }
+            
+        }
+    }
+}
+
+.item-text {
+    @include flex();
+    align-items: center;
+    justify-content: space-between;
+    &-school {
+        font-weight: 700;
+    }
+    &-italic {
+        font-style: italic;
+    }
+}

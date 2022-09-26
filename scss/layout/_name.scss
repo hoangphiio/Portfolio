@@ -34,6 +34,9 @@
             display: unset;
             justify-content: unset;
         }
+        @include max(1200px){
+            padding: 0 15px;
+        }
     }
     &-text {
         @include max(800px) {
