@@ -1,0 +1,81 @@
+@import url("../assets/font/BeVietNam/stylesheet.css");
+@import url("../assets/font/TimesNewRoman/stylesheet.css");
+@font-face {
+  font-family: "Evogria";
+  src: url("../assets/font/Evogria/Evogria.otf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 5px;
+    height: 100%;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 16px;
+  }
+  :hover::-webkit-scrollbar-thumb {
+    background: #b9b9b9;
+    border-radius: 10px;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  font-family: "Be Vietnam Pro";
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &::after {
+    content: attr(title);
+    display: block;
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+.main {
+  overflow: hidden;
+}
+
+button,
+select {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

@@ -1,0 +1,14 @@
+@import url("../assets/font/BeVietNam/stylesheet.css");
+@import url("../js/library/datepicker/date.css");
+
+// Core
+@import "./core/mixin";
+@import "./core/font";
+@import "./core/base";
+@import "./core/reset";
+@import "./core/variable";
+
+// Layout
+@import "./layout/baycungban/home";
+@import "./layout/NCC/ncc";
+@import "./layout/test";
