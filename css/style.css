@@ -890,4 +890,182 @@ table {
   .ncc .footer-inner {
     padding: 2rem;
   }
+}
+
+.cv {
+  height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+@media screen and (max-width: 1024px) {
+  .cv {
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cv {
+    height: 100vh;
+  }
+}
+.cv-wrap {
+  height: 100%;
+  padding: 4rem;
+  background: #fff;
+  flex-direction: column;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .cv-wrap {
+    display: none;
+  }
+}
+.cv-mb {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .cv-mb {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+.cv-mb h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.cv-mb a {
+  background: #fff;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #4d46fa;
+}
+.cv-info {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+.cv-info::before {
+  content: "";
+  bottom: 0;
+  left: -4rem;
+  width: calc(100% + 8rem);
+  position: absolute;
+  border-bottom: 0.1rem solid #e5e5e5;
+}
+.cv-info .title {
+  font-size: 2.6rem;
+}
+.cv-info .position {
+  font-weight: 500;
+}
+.cv-info-box {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.cv-edu {
+  padding-bottom: 2rem;
+}
+.cv-edu-school {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cv-edu-school h3 {
+  text-transform: uppercase;
+}
+.cv-exp {
+  padding-bottom: 2rem;
+}
+.cv-exp-info li span {
+  text-transform: uppercase;
+}
+.cv-company:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.cv-company-box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cv-company-box .company {
+  text-transform: uppercase;
+}
+.cv-skill p span {
+  font-weight: 700;
+}
+.cv-skill-link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.cv-skill-link p {
+  margin-right: 0.4rem;
+}
+.cv .title {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cv .dot {
+  padding-left: 3rem;
+  position: relative;
+}
+.cv .dot::before {
+  content: "";
+  top: 0.6rem;
+  left: 1.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
