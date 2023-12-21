@@ -9,6 +9,9 @@
   @include max(767px) {
     height: 100vh;
   }
+  .container {
+    min-width: 90rem;
+  }
   &-wrap {
     height: 100%;
     padding: 4rem;
@@ -62,9 +65,20 @@
       font-weight: 500;
     }
     &-box {
-      margin-bottom: 0.5rem;
       font-size: 1.6rem;
+      position: relative;
+      margin-bottom: 0.5rem;
       @include flex-ct;
+      a {
+        &:nth-child(1) {
+          &::after {
+            content: "|";
+            margin: 0 0.2rem;
+            display: initial;
+            visibility: visible;
+          }
+        }
+      }
     }
   }
   &-edu {
