@@ -243,16 +243,16 @@ table {
     display: none;
   }
 }
-.cv-infomation {
+.cv-information {
   position: relative;
   text-align: center;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
-.cv-infomation > * {
+.cv-information > * {
   margin-bottom: 0.5rem;
 }
-.cv-infomation::before {
+.cv-information::before {
   content: "";
   bottom: 0;
   left: -4rem;
@@ -260,16 +260,14 @@ table {
   position: absolute;
   border-bottom: 0.1rem solid #e5e5e5;
 }
-.cv-infomation .fullname {
+.cv-information .fullname {
   font-size: 2.6rem;
   text-transform: uppercase;
 }
-.cv-infomation .position {
+.cv-information .position {
   font-weight: 500;
 }
-.cv-infomation .box {
-  font-size: 1.6rem;
-  position: relative;
+.cv-information .box {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -281,13 +279,22 @@ table {
   justify-content: center;
   -webkit-justify-content: center;
 }
-.cv-infomation .box a:nth-child(1)::after {
+.cv-information .box a:nth-child(1)::after {
   content: "|";
   margin: 0 0.2rem;
   display: initial;
   visibility: visible;
 }
-.cv-infomation .social {
+.cv-information a {
+  position: relative;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1201px) {
+  .cv-information a:hover span {
+    color: #f00;
+  }
+}
+.cv-information .social {
   display: block;
 }
 .cv-education {
@@ -314,7 +321,7 @@ table {
 .cv-experience-info li span {
   text-transform: uppercase;
 }
-.cv-experience-infomation li span {
+.cv-experience-information li span {
   font-weight: 600;
   width: fit-content;
   display: inline-block;
