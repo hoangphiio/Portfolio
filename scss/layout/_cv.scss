@@ -8,7 +8,6 @@
   }
 }
 .cv {
-  height: 100%;
   padding: 2rem;
   overflow: hidden;
   background: #f5f5f5;
@@ -87,6 +86,16 @@
         }
       }
     }
+    &-infomation {
+      li {
+        span {
+          font-weight: 600;
+          width: fit-content;
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+    }
   }
   &-company {
     &:not(:last-child) {
@@ -150,6 +159,7 @@
   .title {
     font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
   .dot {

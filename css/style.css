@@ -55,10 +55,6 @@ a::after {
   visibility: hidden;
 }
 
-.main {
-  overflow: hidden;
-}
-
 button,
 select {
   border: none;
@@ -218,7 +214,6 @@ table {
 }
 
 .cv {
-  height: 100%;
   padding: 2rem;
   overflow: hidden;
   background: #f5f5f5;
@@ -319,6 +314,12 @@ table {
 .cv-experience-info li span {
   text-transform: uppercase;
 }
+.cv-experience-infomation li span {
+  font-weight: 600;
+  width: fit-content;
+  display: inline-block;
+  text-decoration: underline;
+}
 .cv-company:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -408,6 +409,7 @@ table {
 .cv .title {
   font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 .cv .dot {
