@@ -12,8 +12,10 @@
   &-wrap {
     height: 100%;
     padding: 4rem;
+    margin-bottom: 2rem;
     background: #fff;
     flex-direction: column;
+    position: relative;
     @include flex;
     @include max(767px) {
       display: none;
@@ -108,6 +110,17 @@
         margin-right: 0.4rem;
       }
       @include flex-al;
+    }
+  }
+
+  &-waterMark {
+    bottom: 2rem;
+    right: 2rem;
+    pointer-events: none;
+    position: absolute;
+    p {
+      font-size: 1.2rem;
+      color: #3c3c3c;
     }
   }
 

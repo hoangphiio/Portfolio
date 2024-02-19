@@ -14,9 +14,6 @@
         width: 15%;
       }
       @include max(767px) {
-        width: 20%;
-      }
-      @include max(500px) {
         width: 100%;
       }
     }
@@ -26,9 +23,6 @@
         width: 85%;
       }
       @include max(767px) {
-        width: 80%;
-      }
-      @include max(500px) {
         width: 100%;
       }
     }
@@ -47,7 +41,7 @@
         padding: 1.5rem;
         transition: 0.4s ease;
         border-bottom: 0.1rem solid #5c5c5c;
-        @include max(500px) {
+        @include max(767px) {
           padding: 1rem;
         }
         > a {
