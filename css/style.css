@@ -69,7 +69,8 @@ img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -245,7 +246,6 @@ table {
 }
 .hd-row {
   height: 100%;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -256,7 +256,6 @@ table {
 }
 .hd-col:nth-child(1) {
   width: 30%;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -270,7 +269,6 @@ table {
 }
 .hd-lang {
   margin: 0 -0.4rem;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -282,7 +280,8 @@ table {
 }
 .hd-lang > div img {
   border: 0.2rem solid transparent;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hd-lang > div.active img {
   border-radius: 50%;
@@ -290,7 +289,6 @@ table {
 }
 .hd-link ul {
   margin: 0 -1.5rem;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -312,7 +310,6 @@ table {
   background: rgba(255, 255, 255, 0.1);
 }
 .hd-nav {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -347,7 +344,6 @@ table {
 }
 .bn-home {
   height: 100%;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -369,7 +365,6 @@ table {
   width: 100%;
   height: 100%;
   position: absolute;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -388,7 +383,6 @@ table {
   height: 100%;
   justify-content: center;
   flex-direction: column;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -419,7 +413,6 @@ table {
 }
 .tk-col:nth-child(1) {
   margin: 0 -2.5rem;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -432,7 +425,6 @@ table {
   padding: 0 2.5rem;
 }
 .tk-cb {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -444,7 +436,6 @@ table {
 .tk-cb label {
   cursor: pointer;
   font-weight: 600;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -554,7 +545,6 @@ table {
   color: #4d46fa;
 }
 .tk-card {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -660,7 +650,6 @@ table {
 }
 .tk-item {
   margin: 0 -1rem;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -681,6 +670,7 @@ table {
   width: 50%;
 }
 
+<<<<<<< HEAD
 .ncc .container {
   padding: 0;
   max-width: 192rem;
@@ -883,20 +873,35 @@ table {
 }
 
 .cv {
+=======
+.main {
+>>>>>>> refs/remotes/origin/master
   height: 100vh;
-  padding: 2rem;
-  overflow: hidden;
-  background: #f5f5f5;
 }
 @media screen and (max-width: 1024px) {
-  .cv {
+  .main {
     height: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .cv {
+  .main {
     height: 100vh;
   }
+}
+
+.cv {
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  background: #f5f5f5;
+  flex-direction: column;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.cv .container {
+  max-width: 112rem;
 }
 .cv-wrap {
   height: 100%;
@@ -904,8 +909,11 @@ table {
   margin-bottom: 2rem;
   background: #fff;
   flex-direction: column;
+<<<<<<< HEAD
   position: relative;
   display: -webkit-flex;
+=======
+>>>>>>> refs/remotes/origin/master
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -916,47 +924,16 @@ table {
     display: none;
   }
 }
-.cv-mb {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  position: absolute;
-  flex-direction: column;
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .cv-mb {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    -webkit-align-items: center;
-    justify-content: center;
-    -webkit-justify-content: center;
-  }
-}
-.cv-mb h2 {
+.cv-infomation {
+  position: relative;
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-}
-.cv-mb a {
-  background: #fff;
-  padding: 1rem 3rem;
-  border-radius: 0.5rem;
-  border: 0.1rem solid #4d46fa;
-}
-.cv-info {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  text-align: center;
-  position: relative;
 }
-.cv-info::before {
+.cv-infomation > * {
+  margin-bottom: 0.5rem;
+}
+.cv-infomation::before {
   content: "";
   bottom: 0;
   left: -4rem;
@@ -964,16 +941,16 @@ table {
   position: absolute;
   border-bottom: 0.1rem solid #e5e5e5;
 }
-.cv-info .title {
+.cv-infomation .fullname {
   font-size: 2.6rem;
+  text-transform: uppercase;
 }
-.cv-info .position {
+.cv-infomation .position {
   font-weight: 500;
 }
-.cv-info-box {
-  margin-bottom: 0.5rem;
+.cv-infomation .box {
   font-size: 1.6rem;
-  display: -webkit-flex;
+  position: relative;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -984,11 +961,19 @@ table {
   justify-content: center;
   -webkit-justify-content: center;
 }
-.cv-edu {
+.cv-infomation .box a:nth-child(1)::after {
+  content: "|";
+  margin: 0 0.2rem;
+  display: initial;
+  visibility: visible;
+}
+.cv-infomation .social {
+  display: block;
+}
+.cv-education {
   padding-bottom: 2rem;
 }
-.cv-edu-school {
-  display: -webkit-flex;
+.cv-education-school {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -999,20 +984,19 @@ table {
   justify-content: space-between;
   -webkit-justify-content: space-between;
 }
-.cv-edu-school h3 {
+.cv-education-school h3 {
   text-transform: uppercase;
 }
-.cv-exp {
+.cv-experience {
   padding-bottom: 2rem;
 }
-.cv-exp-info li span {
+.cv-experience-info li span {
   text-transform: uppercase;
 }
 .cv-company:not(:last-child) {
   margin-bottom: 1rem;
 }
 .cv-company-box {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1030,7 +1014,6 @@ table {
   font-weight: 700;
 }
 .cv-skill-link {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1042,6 +1025,7 @@ table {
 .cv-skill-link p {
   margin-right: 0.4rem;
 }
+<<<<<<< HEAD
 .cv-waterMark {
   bottom: 2rem;
   right: 2rem;
@@ -1051,6 +1035,58 @@ table {
 .cv-waterMark p {
   font-size: 1.2rem;
   color: #3c3c3c;
+=======
+.cv-mobile {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .cv-mobile {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+.cv-mobile-block {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1.7rem;
+  flex-direction: column;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.cv-mobile h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .cv-mobile h2 {
+    font-size: 1.4rem;
+  }
+}
+.cv-mobile a {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #4d46fa;
+>>>>>>> refs/remotes/origin/master
 }
 .cv .title {
   font-size: 1.8rem;
@@ -1070,4 +1106,4 @@ table {
   border-radius: 50%;
   background: #000;
   position: absolute;
-}/*# sourceMappingURL=style.css.map */
+}
