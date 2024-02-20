@@ -63,18 +63,19 @@ select {
 
 img {
   width: 100%;
-  height: 100%;
   display: block;
-  object-fit: cover;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
-  position: relative;
   width: 100%;
   height: 100%;
-  max-width: 120rem;
   margin: 0 auto;
+  max-width: 112rem;
   padding: 0 1.5rem;
+  position: relative;
 }
 
 html,
@@ -200,7 +201,7 @@ table {
 }
 
 .main {
-  height: 100vh;
+  background: #f5f5f5;
 }
 @media screen and (max-width: 1024px) {
   .main {
@@ -216,23 +217,23 @@ table {
 .cv {
   padding: 2rem;
   overflow: hidden;
-  background: #f5f5f5;
   flex-direction: column;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
 }
-.cv .container {
-  max-width: 112rem;
+@media screen and (max-width: 767px) {
+  .cv {
+    height: 100%;
+  }
 }
 .cv-wrap {
   height: 100%;
   padding: 4rem;
   background: #fff;
+  position: relative;
   flex-direction: column;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -268,7 +269,6 @@ table {
   font-weight: 500;
 }
 .cv-information .box {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -301,7 +301,6 @@ table {
   padding-bottom: 2rem;
 }
 .cv-education-school {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -323,6 +322,7 @@ table {
 }
 .cv-experience-information li span {
   font-weight: 600;
+  width: -moz-fit-content;
   width: fit-content;
   display: inline-block;
   text-decoration: underline;
@@ -331,7 +331,6 @@ table {
   margin-bottom: 1rem;
 }
 .cv-company-box {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -349,7 +348,6 @@ table {
   font-weight: 700;
 }
 .cv-skill-link {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -372,7 +370,6 @@ table {
 }
 @media screen and (max-width: 767px) {
   .cv-mobile {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -389,7 +386,6 @@ table {
   background: #fff;
   border-radius: 1.7rem;
   flex-direction: column;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -407,6 +403,7 @@ table {
 }
 .cv-mobile a {
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
   background: #fff;
   padding: 1rem 3rem;
@@ -432,4 +429,4 @@ table {
   border-radius: 50%;
   background: #000;
   position: absolute;
-}/*# sourceMappingURL=style.css.map */
+}

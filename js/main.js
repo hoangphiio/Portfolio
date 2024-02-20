@@ -1,9 +1,5 @@
-import dropdownSelectModule from "./modules/dropdownSelectModule.js";
-import swapModule from "./modules/swapModule.js";
-import toggleModule from "./modules/toggleModule.js";
+import switchLanguageModule from "./modules/switchLanguageModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  dropdownSelectModule();
-  swapModule();
-  toggleModule();
+  switchLanguageModule();
 });

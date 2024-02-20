@@ -1,5 +1,5 @@
 .main {
-  height: 100vh;
+  background: #f5f5f5;
   @include max(1024px) {
     height: auto;
   }
@@ -10,16 +10,16 @@
 .cv {
   padding: 2rem;
   overflow: hidden;
-  background: #f5f5f5;
   flex-direction: column;
   @include flex;
-  .container {
-    max-width: 112rem;
+  @include max(767px) {
+    height: 100%;
   }
   &-wrap {
     height: 100%;
     padding: 4rem;
     background: #fff;
+    position: relative;
     flex-direction: column;
     @include flex;
     @include max(767px) {
