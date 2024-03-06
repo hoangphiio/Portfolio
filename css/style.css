@@ -1,11 +1,6 @@
 @import url("../assets/font/BeVietNam/stylesheet.css");
 @import url("../js/library/datepicker/date.css");
 @import url("../assets/font/BeVietNam/stylesheet.css");
-@import url("../assets/font/TimesNewRoman/stylesheet.css");
-@font-face {
-  font-family: "Evogria";
-  src: url("../assets/font/Evogria/Evogria.otf") format("truetype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,6 +31,7 @@ html {
 }
 
 body {
+  outline: 0;
   font-size: 14px;
   color: #000;
   line-height: 1.5;
@@ -73,7 +69,7 @@ img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  max-width: 112rem;
+  max-width: 120rem;
   padding: 0 1.5rem;
   position: relative;
 }
@@ -216,6 +212,7 @@ table {
 
 .cv {
   padding: 2rem;
+  cursor: default;
   overflow: hidden;
   flex-direction: column;
   display: -moz-flex;
@@ -228,9 +225,12 @@ table {
     height: 100%;
   }
 }
+.cv .container {
+  max-width: 95rem;
+}
 .cv-wrap {
   height: 100%;
-  padding: 4rem;
+  padding: 3rem;
   background: #fff;
   position: relative;
   flex-direction: column;
@@ -249,9 +249,12 @@ table {
   text-align: center;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-}
-.cv-information > * {
-  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 .cv-information::before {
   content: "";
@@ -266,7 +269,8 @@ table {
   text-transform: uppercase;
 }
 .cv-information .position {
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .cv-information .box {
   display: -moz-flex;
@@ -359,6 +363,11 @@ table {
 .cv-skill-link p {
   margin-right: 0.4rem;
 }
+@media screen and (min-width: 1201px) {
+  .cv-skill-link a:hover {
+    color: #f00;
+  }
+}
 .cv-mobile {
   top: 0;
   bottom: 0;
@@ -413,7 +422,7 @@ table {
 .cv .title {
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 .cv .dot {
