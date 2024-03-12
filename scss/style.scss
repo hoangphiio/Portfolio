@@ -1,12 +1,16 @@
 @import url("../assets/font/BeVietNam/stylesheet.css");
+
+// Library
 @import url("../js/library/datepicker/date.css");
 
 // Core
 @import "./core/mixin";
-@import "./core/font";
 @import "./core/base";
 @import "./core/reset";
 @import "./core/variable";
+
+// Component
+@import "./component/header";
 
 // Layout
 @import "./layout/cv";
