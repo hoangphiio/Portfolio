@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cli": "^1.0.1",
+    "gulp": "^4.0.2",
     "node-sass": "^9.0.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
@@ -8,5 +9,14 @@
   },
   "scripts": {
     "scss": "node-sass -w ./scss -o ./css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^5.0.0"
   }
 }
