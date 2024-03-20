@@ -200,14 +200,11 @@
   }
 }
 
-@media print{
-  .cv{
+@media print {
+  .cv {
     padding: 1rem;
-    .container{
+    .container {
       padding: 0;
     }
   }
-  #print {
-    float: right;
-}
 }
