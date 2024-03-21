@@ -24,16 +24,18 @@ html(lang="en")
         meta(name='resource-type' content='Document')
         meta(name='distribution' content='Global')
         meta(name='revisit-after' content='1 days')
-        //- Link JS
-        script(src='../js/library/jquery/jquery-min.js')
+
         //- Link CSS
-        link(rel='stylesheet' type='text/css' href='../dist/css/style.css')
+        link(rel='stylesheet' href='/css/style.css')
+
+        //- Link JS
+        script(src='/js/library/jquery/jquery-min.js')
 
         title=title
 
         body
 
-            block container
-                main.main(class=mainClass)
+            main.main(class=mainClass)
+                block container
 
-            script(src='../js/main.js' type='module' defer='')
+            script(src='/js/main.js' type='module' defer='')

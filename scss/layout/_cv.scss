@@ -18,7 +18,6 @@
   }
   .container {
     max-width: 100rem;
-    font-family: "Be VietNam Pro";
   }
   &-wrap {
     height: 100%;
@@ -196,15 +195,6 @@
       border-radius: 50%;
       background: #000;
       position: absolute;
-    }
-  }
-}
-
-@media print {
-  .cv {
-    padding: 1rem;
-    .container {
-      padding: 0;
     }
   }
 }

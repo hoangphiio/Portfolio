@@ -41,7 +41,7 @@ function compilescss() {
     )
     .pipe(postcss([autoprefixer("last 2  versions")]))
     .pipe(minify({ compatibility: "ie8", sourceMap: true }))
-    .pipe(dest("dist/css", { sourcemaps: "." }))
+    .pipe(dest("css", { sourcemaps: "." }))
     .pipe(browserSync.stream());
 }
 

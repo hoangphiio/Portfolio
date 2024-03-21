@@ -7,8 +7,67 @@ block container
     .cv
         .container
             .cv-wrap
-                .cv-infomation
+                .cv-information
                     h1.fullname Nguyễn Võ Hoàng Phi
                     p.position Front End Developer
-                    .box 
-                        
+                    .box
+                        a(href="#" class="mail") 
+                            | Email: 
+                            span hoangphiio.dev@gmail.com
+                        a(href="tel:090387395") 
+                            | Số điện thoại: 
+                            span 0903 873 915
+                    a(href="https://www.facebook.com/hoangphiio/" class="social") 
+                        | Mạng xã hội: 
+                        span facebook.com/hoangphiio
+                .cv-education 
+                    h2.title Trình độ học vấn
+                    .cv-education-school 
+                        h3.school Đại học Nguyễn Tất Thành
+                        p.time Tháng 11 năm 2017 - Tháng 2 năm 2021
+                    p.graduate Kỹ sư phần mềm
+                    ul.cv-education-information
+                        each bulletData in [{title: "Tốt nghiệp loại khá với GPA 2.8/4."}, {title: "Nhận được học bổng khuyến học từ trường Đại học Nguyễn Tất Thành."}]
+                            li.dot=bulletData.title
+                .cv-experience
+                    h2.title Kinh nghiệm làm việc
+                    .cv-company
+                        .cv-company-box
+                            h3.company Công ty Công nghệ Vũ Thảo 
+                            p.time Tháng 10 năm 2022 - Tháng 3 năm 2024
+                        .position Junior Front End Developer
+                        ul.cv-experience-info
+                            each bulletData in [{title: "Tham gia phát triển giao diện các dự án như Tập đoàn Điên lưc Việt Nam (EVN), Petrolimex, PNJ, ...."}, {title: "Chỉnh sửa giao diện dựng sẵn (Figma, Photoshop,...)."}, {title: "Fix bug, thay đổi giao diện theo yêu cầu của khách hàng."}, {title: "Phối hợp với BE dựng site theo môi trường (UAT, MIG, LIVE) khách hàng yêu cầu."}, {title: "Hiểu và tuân thủ các quy trình làm việc của công ty, xây dựng dựa trên source code hiện có để đảm bảo việc giao tính năng, giao diện theo kịp tiến độ của khách hàng."}, {title: "Nghiên cứu cách tối ưu soucre code (HTML, CSS, JavaScripts), tiêu chuẩn của website."}, {title: "Thiết kế giao diện và các icons (Custom dựa trên các icon có sẵn). Phát triển bố cục và thiết kế website theo tiêu chuẩn SEO."}]
+                                li.dot=bulletData.title
+                .cv-comapany
+                    .cv-company-box
+                        h3.company Công ty TNHH MTV TM-DV PTIT
+                        p.time Tháng 2 năm 2021 - Tháng 2 năm 2022
+                    .position Front End Developer
+                        ul.cv-experience-information
+                            each bulletData in [{title: "Xử lý các thiết kế giao diện hiện có của khách hàng. Bảo trì source code của công ty bằng ngôn ngữ PHP.", dot: true}, {title: "Thiết kế các banner, icons, layout (đơn giản) bằng các công cụ như canva, photoshop, figma, ...", dot: true}, {title: "Tạo project landing page bằng ReactJS.", dot: true}]
+                                li(class=bulletData.dot ? 'dot' : '')
+                                    if !bulletData.dot
+                                        span= bulletData.title
+                                    else
+                                        | #{bulletData.title}
+                            li 
+                                span Thưc tâp 
+                                |  Đọc tài liêu, nghiên cứu cách thức hoạt động của công ty, ngôn ngữ và kỹ năng phù hợp với vị trí Front-End.
+                            li 
+                                span Training:
+                                |  Kiến ​​thức về thiết kế giao diện và ngôn ngữ PHP.
+                .cv-skill
+                    h2.title Kỹ năng công nghê
+                    p.skill
+                        span Lập trình:
+                        |  HTML (HTML5, Pug), Pug, CSS (CSS3, SASS), JavaScripts, Gulp, Git, Bootstrap, Tailwindcss.
+                    p.system
+                        span Hệ điều hành: 
+                        | Windows, MAC OS.
+                    .cv-skill-link
+                        p.link 
+                            span Website tiêu biểu
+                        a(href="#" target="_blank") genco3.com, &nbsp; 
+                        a(href="#" target="_blank") vuthao.com, &nbsp;
+                        a(href="#" target="_blank") ketnoiphang.com, ...

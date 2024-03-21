@@ -18,22 +18,84 @@
     <meta name="resource-type" content="Document">
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="1 days">
-    <script src="../js/library/jquery/jquery-min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/library/jquery/jquery-min.js"></script>
     <title></title>
     <body>
-      <div class="cv">
-        <div class="container">
-          <div class="cv-wrap">
-            <div class="cv-infomation">
-              <h1 class="fullname">Nguyễn Võ Hoàng Phi</h1>
-              <p class="position">Front End Developer</p>
-              <div class="box"> </div>
+      <main class="main">
+        <div class="cv">
+          <div class="container">
+            <div class="cv-wrap">
+              <div class="cv-information">
+                <h1 class="fullname">Nguyễn Võ Hoàng Phi</h1>
+                <p class="position">Front End Developer</p>
+                <div class="box"><a class="mail" href="#">
+                     Email: <span>hoangphiio.dev@gmail.com</span></a><a href="tel:090387395">
+                     Số điện thoại: <span>0903 873 915</span></a></div><a class="social" href="https://www.facebook.com/hoangphiio/">
+                   Mạng xã hội: <span>facebook.com/hoangphiio</span></a>
+              </div>
+              <div class="cv-education"> 
+                <h2 class="title">Trình độ học vấn</h2>
+                <div class="cv-education-school"> 
+                  <h3 class="school">Đại học Nguyễn Tất Thành</h3>
+                  <p class="time">Tháng 11 năm 2017 - Tháng 2 năm 2021</p>
+                </div>
+                <p class="graduate">Kỹ sư phần mềm</p>
+                <ul class="cv-education-information">
+                  <li class="dot">Tốt nghiệp loại khá với GPA 2.8/4.</li>
+                  <li class="dot">Nhận được học bổng khuyến học từ trường Đại học Nguyễn Tất Thành.</li>
+                </ul>
+              </div>
+              <div class="cv-experience">
+                <h2 class="title">Kinh nghiệm làm việc</h2>
+                <div class="cv-company">
+                  <div class="cv-company-box">
+                    <h3 class="company">Công ty Công nghệ Vũ Thảo </h3>
+                    <p class="time">Tháng 10 năm 2022 - Tháng 3 năm 2024</p>
+                  </div>
+                  <div class="position">Junior Front End Developer</div>
+                  <ul class="cv-experience-info">
+                    <li class="dot">Tham gia phát triển giao diện các dự án như Tập đoàn Điên lưc Việt Nam (EVN), Petrolimex, PNJ, ....</li>
+                    <li class="dot">Chỉnh sửa giao diện dựng sẵn (Figma, Photoshop,...).</li>
+                    <li class="dot">Fix bug, thay đổi giao diện theo yêu cầu của khách hàng.</li>
+                    <li class="dot">Phối hợp với BE dựng site theo môi trường (UAT, MIG, LIVE) khách hàng yêu cầu.</li>
+                    <li class="dot">Hiểu và tuân thủ các quy trình làm việc của công ty, xây dựng dựa trên source code hiện có để đảm bảo việc giao tính năng, giao diện theo kịp tiến độ của khách hàng.</li>
+                    <li class="dot">Nghiên cứu cách tối ưu soucre code (HTML, CSS, JavaScripts), tiêu chuẩn của website.</li>
+                    <li class="dot">Thiết kế giao diện và các icons (Custom dựa trên các icon có sẵn). Phát triển bố cục và thiết kế website theo tiêu chuẩn SEO.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cv-comapany">
+                <div class="cv-company-box">
+                  <h3 class="company">Công ty TNHH MTV TM-DV PTIT</h3>
+                  <p class="time">Tháng 2 năm 2021 - Tháng 2 năm 2022</p>
+                </div>
+                <div class="position">Front End Developer
+                  <ul class="cv-experience-information">
+                    <li class="dot">Xử lý các thiết kế giao diện hiện có của khách hàng. Bảo trì source code của công ty bằng ngôn ngữ PHP.
+                    </li>
+                    <li class="dot">Thiết kế các banner, icons, layout (đơn giản) bằng các công cụ như canva, photoshop, figma, ...
+                    </li>
+                    <li class="dot">Tạo project landing page bằng ReactJS.
+                    </li>
+                    <li> <span>Thưc tâp </span> Đọc tài liêu, nghiên cứu cách thức hoạt động của công ty, ngôn ngữ và kỹ năng phù hợp với vị trí Front-End.</li>
+                    <li> <span>Training:</span> Kiến ​​thức về thiết kế giao diện và ngôn ngữ PHP.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cv-skill">
+                <h2 class="title">Kỹ năng công nghê</h2>
+                <p class="skill"><span>Lập trình:</span> HTML (HTML5, Pug), Pug, CSS (CSS3, SASS), JavaScripts, Gulp, Git, Bootstrap, Tailwindcss.</p>
+                <p class="system"><span>Hệ điều hành: </span>Windows, MAC OS.</p>
+                <div class="cv-skill-link">
+                  <p class="link"> <span>Website tiêu biểu</span></p><a href="#" target="_blank">genco3.com, &nbsp; </a><a href="#" target="_blank">vuthao.com, &nbsp;</a><a href="#" target="_blank">ketnoiphang.com, ...</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <script src="../js/main.js" type="module" defer=""></script>
+      </main>
+      <script src="/js/main.js" type="module" defer=""></script>
     </body>
   </head>
 </html>
