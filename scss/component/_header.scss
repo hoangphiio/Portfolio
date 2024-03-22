@@ -1,0 +1,16 @@
+.header {
+  padding: 1.5rem;
+  &-menu {
+    @include flex-al;
+  }
+  &-logo {
+    a {
+      color: white;
+      display: block;
+      h1 {
+        color: inherit;
+        font-size: 4.4rem;
+      }
+    }
+  }
+}

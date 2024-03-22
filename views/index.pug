@@ -2,6 +2,7 @@ block mixins
     include ../views/core/mixins
 block variable
     - title = ""
+    - bodyClass = ""
     - mainClass = ""
 
 doctype html
@@ -25,6 +26,9 @@ html(lang="en")
         meta(name='distribution' content='Global')
         meta(name='revisit-after' content='1 days')
 
+        //- Favicon
+        link(rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon")
+
         //- Link CSS
         link(rel='stylesheet' href='/css/style.css')
 
@@ -33,9 +37,12 @@ html(lang="en")
 
         title=title
 
-        body
+    body(class=bodyClass)
 
-            main.main(class=mainClass)
-                block container
+        if useHeader
+            include ../views/component/header
 
-            script(src='/js/main.js' type='module' defer='')
+        main.main(class=mainClass)
+            block content
+
+        script(src='/js/main.js' type='module' defer)

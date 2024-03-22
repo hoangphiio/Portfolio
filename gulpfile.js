@@ -26,7 +26,8 @@ async function webpImage() {
   const imagewebp = await import("gulp-webp");
   return src("assets/img/**/*.{jpg,png}")
     .pipe(imagewebp.default())
-    .pipe(dest("dist/assets/img"));
+    .pipe(dest("dist/assets/img"))
+    .pipe(browserSync.stream());
 }
 
 // Compile SCSS, autoprefix, and minify CSS
@@ -48,7 +49,12 @@ function compilescss() {
 /** HTML Task */
 function htmlTask() {
   return src("views/**/*.pug")
-    .pipe(pug({ pretty: true }))
+    .pipe(
+      pug({ pretty: true, basedir: process.cwd() }).on("error", function (err) {
+        console.log(err.message);
+        this.emit("end");
+      })
+    )
     .pipe(dest("dist/views"))
     .pipe(browserSync.stream());
 }
