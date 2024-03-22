@@ -7,9 +7,6 @@
     border-radius: 5px;
     height: 100%;
   }
-  ::-webkit-scrollbar-track {
-    background: #fff;
-  }
   ::-webkit-scrollbar-thumb {
     background: #ddd;
     border-radius: 16px;
@@ -32,6 +29,7 @@ body {
   color: #000;
   font-size: 14px;
   line-height: 1.5;
+  background: #0a192f;
   font-family: "Inter", sans-serif;
 }
 
