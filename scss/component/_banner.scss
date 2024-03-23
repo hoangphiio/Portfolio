@@ -1,0 +1,15 @@
+.banner {
+  z-index: 3;
+  position: relative;
+  height: calc(100vh - 9.2rem);
+  &-position {
+    height: 100%;
+    padding-inline: 15rem;
+  }
+  &-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

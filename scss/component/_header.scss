@@ -1,5 +1,8 @@
 .header {
-  padding: 4rem 6rem;
+  padding: 2rem;
+  &-wrap {
+    height: 100%;
+  }
   &-menu {
     @include flex-btw;
   }
@@ -12,7 +15,7 @@
         content: "";
         bottom: 0.8rem;
         right: -1.4rem;
-        background: #64ffda;
+        background: $green-dark;
         position: absolute;
         @include cir(0.8rem);
       }
@@ -37,22 +40,18 @@
           color: inherit;
           font-weight: 500;
           font-size: 1.4rem;
+          transition: 0.4s all;
+          @include min(1201px) {
+            &:hover {
+              color: $green-dark;
+            }
+          }
           span {
             margin-right: 0.5rem;
-            color: #64ffda;
+            color: $green-dark;
           }
         }
       }
-    }
-  }
-  &-link {
-    .btn-contact {
-      display: block;
-      color: #64ffda;
-      font-size: 1.4rem;
-      padding: 1rem 3rem;
-      border-radius: 0.5rem;
-      border: 0.1rem solid #64ffda;
     }
   }
 }

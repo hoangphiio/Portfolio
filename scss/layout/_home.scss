@@ -1,3 +1,35 @@
 .home {
   color: white;
 }
+
+// Section-inntroduce
+.person {
+  &-welcome {
+    .hello {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $green-dark;
+      margin-bottom: 2rem;
+    }
+  }
+  &-introduce {
+    .content {
+      color: #8892b0;
+      font-size: 2rem;
+    }
+  }
+  &-contact {
+    margin-top: 2rem;
+  }
+  .heading {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    &.name {
+      color: white;
+    }
+    &.work {
+      color: #8892b0;
+    }
+  }
+}

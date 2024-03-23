@@ -2,3 +2,24 @@ $blue: #4d46fa;
 $white: #fff;
 $gray: #0a192f;
 $green-dark: #64ffda;
+
+.btn {
+  &-contact {
+    display: block;
+    font-weight: 600;
+    width: fit-content;
+    color: $green-dark;
+    font-size: 1.4rem;
+    position: relative;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid $green-dark;
+    transition: 0.4s ease-in-out;
+  }
+  @include min(1201px) {
+    &:hover {
+      box-shadow: 0.4rem 0.4rem 0 0 $green-dark;
+      transform: translateY(-0.2rem) translateX(-0.2rem);
+    }
+  }
+}

@@ -200,7 +200,7 @@
     @include max(767px) {
       display: none;
     }
-    .btn {
+    .btn-back {
       margin-top: 2rem;
       justify-content: flex-end;
       @include flex-al;
